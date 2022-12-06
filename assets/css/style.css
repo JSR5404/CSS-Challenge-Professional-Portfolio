@@ -16,11 +16,6 @@
 
 /* Start of Semantic code */
 
-/* Smoth Scrolling effect */
-html {
-  scroll-behavior: smooth;
-}
-
 /* Start of Header code */
 header {
   display: flex; /* Flex container to display the child elements as flex with space between and wrap */
@@ -113,9 +108,6 @@ footer a {
 /* Footer hover */
 .footer-container a:hover{
   color: var(--lightskyblue);
-  /*REMOVED - Zoom in effect with font-size 1.5vw
-  Will revisit for next project iteration
-  font-size: 2vw;*/
   font-weight: bold;
   text-shadow: 0px 0px 20px var(--lightskyblue);
 }
@@ -225,81 +217,7 @@ footer a {
   border: .25vw solid var(--rgba-border-color-opacity);
 }
 
-.work-item-project.run-buddy {
-  grid-column: 3 /span 1;
-  grid-row: 7 / span 3;
-  background-image: url("../images/run-buddy-project.JPG");
-  background-size: cover;
-  display: flex; /*Flex required to move the element as flex */
-  align-items: flex-end; /*Allow text to be at center of grid*/
-  padding-left: 0px;
-  padding-bottom: 15px;
-  text-align: left;
-  border: .25vw solid var(--rgba-border-color-opacity);
-}
 
-.work-item-project.password-generator {
-  grid-column: 2 / span 1;
-  grid-row: 7 / span 3; 
-  /* Royalty free image */
-  background-image: url("../images/password-generator.JPG");
-  background-size: cover;
-  /* Allow the background image to align */
-  display: flex; /*Flex required to move the element as flex */
-  align-items: flex-end; /*Allow text to be at center of grid*/
-  padding-left: 0px;
-  padding-bottom: 15px;
-  text-align: left;
-  border: .25vw solid var(--rgba-border-color-opacity);
-}
-
-.work-item-project.web-api-code-quiz {
-  grid-column: 4 / span 1;
-  grid-row: 1 / span 3;
-  /* Royalty free image */
-  background-image: url("../images/web-api-code-quiz.JPG");
-  background-size: 300px 200px, cover;
-  display: flex; /*Flex required to move the element as flex */
-  align-items: flex-end; /*Allow text to be at center of grid*/
-  padding-left: 0px;
-  padding-bottom: 15px;
-  text-align: left;
-  border: .25vw solid var(--rgba-border-color-opacity);
-}
-
-.work-item-project.work-day-scheduler {
-  grid-column: 4 / span 1;
-  grid-row: 4 / span 3;
-  /* Royalty free image */
-  background-image: url("../images/work-day-scheduler.JPG");
-  background-size: cover;
-  display: flex; /*Flex required to move the element as flex */
-  align-items: flex-end; /*Allow text to be at center of grid*/
-  padding-left: 0px;
-  padding-bottom: 15px;
-  text-align: left;
-  border: .25vw solid var(--rgba-border-color-opacity);
-}
-
-.work-item-project.project01-group07 {
-  grid-column: 4 /span 1;
-  grid-row: 7 / span 3;
-  background-image: url("../images/project1-group07.JPG");
-  background-size: cover;
-  display: flex; /*Flex required to move the element as flex */
-  align-items: flex-end; /*Allow text to be at center of grid*/
-  padding-left: 0px;
-  padding-bottom: 15px;
-  text-align: left;
-  border: .25vw solid var(--rgba-border-color-opacity);
-}
-
-.work-item-project.ghost-item {
-  grid-column: 4 / span 1;
-  /* Hide Text */
-  opacity: 0;
-  
-}
 /* End of FLEX CSS Main body code Work projects*/
 
 /* Start of span code */
@@ -319,16 +237,7 @@ footer a {
   margin-bottom: 20px;
 }
 
-/* Hero section cool subtitle with opacity of .95 */
-/* It needs to be adjusted to blend slighty with image selected with image selected */
-.span-background.opacity{
-  opacity: .95; /* Note: 1 is 0 opacity and 0 is fully transparent */
-  font-size: 30px;
-}
 
-.span-background.lower-text {
-  font-size: x-small;
-}
 /* End of span code */
 
 /* Start of footer class code */
@@ -471,46 +380,6 @@ footer a {
     gap: 2.5px 2.5px; /* Gap on x and y grid */
   }
 
-  /*Extra padding to align as desired depending on different devices tested */
-
-  .footer-grid-item.contact-me {
-    padding-top: 0px;
-    font-size: 25px;
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 1;
-    text-align: center;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    /* Border right removed*/
-    border-right: none;
-    /* Border bottom added for new grid format */
-    border-bottom: 2px solid var(--lightskyblue);
-    padding-left: 25px;
-  }
-
-  .footer-grid-item.phone{
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 2;
-    align-self: center;
-    padding-left: 10px;
-  }
-
-  .footer-grid-item.email{
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 2;
-    align-self: center;
-    padding-left: 25px;
-
-  }
-
-  .footer-grid-item.git-hub{
-    grid-column: 3 / span 1;
-    grid-row: 2 / span 2;
-    align-self: center;
-    width: 20px;
-    padding-left: 80px;
-  }
-  /* End of footer grid smaller screen code changes at res */
 }
 
 /* This will be applied on any screen smaller than 768px */
@@ -581,88 +450,9 @@ footer a {
     margin-top: 15px;
   }
 
-  .work-grid-container {/* CSS Grid */
-    /* Create a 3X9 grid for smaler screen */
-    /* Will assign size directly to avoid grid span */
-    grid-template-columns: repeat(3, 1fr);
-    /* .5fr is to fix spacing on main title item */
-    grid-template-rows: .5fr repeat(10, 1fr);
-    /* Gap on x and y grid */
-    gap: 2.5px 2.5px;
-  }
+ 
 
-  /* Target the about me text only */
-  .work-item.work-title {
-    font-size: 35px;
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 1;
-    text-align: center;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    border-bottom: 2px solid var(--about-me-work-border);
-    border-right: none;
-    align-self: start;
-  }
-
-  .work-item-project.challenge-1-refactor {
-    grid-column: 1 / span 3;
-    grid-row: 2 / span 3;
-    align-items: flex-end;
-    text-align: center;
-    background-position: scroll; /* Forced the image to scroll with the page to avoid any issues at smaller screens */
-  }
-
-  .work-item-project.run-buddy {
-    grid-column: 1 /span 3;
-    grid-row: 5 / span 2;
-    align-items: flex-end;
-    text-align: center;
-    background-position: scroll; /* Forced the image to scroll with the page to avoid any issues at smaller screens */
-  }
   
-  .work-item-project.password-generator {
-    grid-column: 1 /span 3;
-    grid-row: 7 / span 1;
-    /* By padding top from run buddy all of my grid grew in size. Allowing proper look. */
-    padding-top: 30px;
-    background-position: scroll;
-    text-align: center;
-  }
-  
-  .work-item-project.web-api-code-quiz {
-    grid-column: 1 /span 3;
-    grid-row: 8 / span 1;
-    background-position: scroll;
-    text-align: center;
-  }
-  
-  .work-item-project.work-day-scheduler {
-    grid-column: 1 /span 3;
-    grid-row: 9 / span 1;
-    background-position: scroll;
-    text-align: center;
-  }
-
-  .work-item-project.project01-group07  {
-    grid-column: 1 /span 3;
-    grid-row: 10 / span 1;
-    align-items: flex-end;
-    text-align: center;
-    background-position: scroll; /* Forced the image to scroll with the page to avoid any issues at smaller screens */
-  }
-  
-  /* Ghost item made avialable at smaller screens as I android devices can click it. Ghost item is an inteional practice test */
-  .work-item-project.ghost-item {
-    grid-column: 1 /span 3;
-    grid-row: 11 / span 1;
-    background-image: url("../images/pexels-luizclas-556665.jpg");
-    background-size: cover;
-    display: flex; /*Flex required to move the element as flex */
-    align-items: center; /*Allow text to be at center of grid*/
-    opacity: 1;
-    background-position: scroll;
-    text-align: center;
   }
 
   .footer-wrapper { /* Get the footer closer to the work grid container at the top*/
@@ -672,7 +462,7 @@ footer a {
 
 
   /* End of footer grid smaller screen code changes at res */
-}
+
 
    /* This will be applied on any screen smaller than 575px */
 @media screen and  (max-width: 575px) {
